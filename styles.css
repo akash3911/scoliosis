@@ -1,0 +1,119 @@
+:root {
+  --bg: #f5f7fb;
+  --fg: #1e293b;
+  --muted: #475569;
+  --card: #ffffff;
+  --line: #d9e1ee;
+  --accent: #006d77;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--fg);
+  background: radial-gradient(circle at top right, #dff4f6, var(--bg) 45%);
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  margin-bottom: 0.2rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+label {
+  display: block;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-size: 1rem;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+#preview {
+  display: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+
+#resultCanvas {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #f8fafc;
+}
+
+#resultMessage {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.angles-panel {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.angle-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.angle-label {
+  font-weight: 700;
+}
+
+.angle-meta {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.angle-value {
+  color: var(--accent);
+  font-weight: 700;
+}
